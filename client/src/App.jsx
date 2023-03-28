@@ -1,16 +1,16 @@
-import './App.css'
-import Chat from './components/Chat'
-import Sidebar from "./components/Sidebar"
+import React from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { Register, Login, Chat } from './pages/Index'
 
 function App() {
-
   return (
-    <div className="app">
-      <div className="app_body">
-        <Sidebar />
-        <Chat />
-      </div>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/register" element={<Register />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/" element={<Chat />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
