@@ -1,2 +1,1 @@
-# messaging-app-frontend
- 
+# messaging-app
